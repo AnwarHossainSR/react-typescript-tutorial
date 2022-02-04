@@ -1,16 +1,11 @@
 import React from "react";
 import "./App.css";
-import Container from "./components/Container";
-import Parents from "./components/Parents";
-import Status from "./components/Status";
+import Button from "./components/Button";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Status status="success" data="Mahedi Hasan" />
-      <Parents>
-        <Container>This is container text</Container>
-      </Parents>
+      <Button handleClick={(event, id) => console.log("clicked", event, id)} />
     </div>
   );
 };
