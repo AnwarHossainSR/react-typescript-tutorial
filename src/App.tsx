@@ -1,13 +1,9 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button";
+import Login from "./components/Login";
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <Button handleClick={(event, id) => console.log("clicked", event, id)} />
-    </div>
-  );
+  return <div className="App"><Login /></div>;
 };
 
 export default App;
